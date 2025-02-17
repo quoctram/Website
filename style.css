@@ -1,0 +1,228 @@
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body{
+    background: url('./tai-nguyen/image/anhnen1.webp');
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",sans-serif;
+    font-family: "Lobster", serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Chế độ sáng */
+body.light-mode {
+    background:url('./tai-nguyen/image/anhnen2.jpg');
+    height: 100vh;
+    width: 100vw;
+}
+
+body.light-mode button {
+    background-color: #007bff;
+}
+
+/* Chế độ tối */
+body.dark-mode {
+    background:url('./tai-nguyen/image/anhnen1.webp') center repeat fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+body.dark-mode button {
+    background-color: #bb86fc;
+}
+::wet-scrollbar{
+    width: 0.5rem;
+}
+html::-webkit-scrollbar {
+    width: 0.9vw; /* Độ rộng của thanh scrollbar */
+}
+
+html::-webkit-scrollbar-track {
+    background: #000000; /* Màu nền */
+    border-radius: 10px; /* Bo tròn viền */
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #39eeff; /* Màu chính */
+    border-radius: 10px; /* Bo tròn viền */
+    border: 0.1vw solid #f0f0f0; /* Viền ngoài */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #78f9f6; /* Màu khi hover */
+}
+.thanh-ben{
+    width: 10vw;
+    height: 100vh;
+    background-color: black;
+    display: block;
+    border: 0.1rem double white;
+    border-radius: 2rem;
+}
+.clock{
+    color: white;
+    user-select: none;
+    /* border: 0.1rem solid white; */
+    font-size: 2vw;
+    text-align: center;
+    border-radius: 50rem;
+    padding: 0.7rem;
+    margin-top: 1vh;
+    /* box-shadow: 0rem 0rem 1rem cyan; */
+}
+a{
+    font-size: 3.3vw;
+    color: rgb(70, 92, 238);
+}
+a:hover{
+    color: rgb(70, 154, 238);
+    text-decoration: none;
+    font-size: 4vw;
+}
+.icon{
+    text-align: center;
+    height: 100vh;
+}
+.fa-house-user{
+    color: red;
+}
+.fa-solid{
+    margin-top: 5.5vh;
+}
+.head{
+    padding-top: 3vh;
+    display: block;
+    user-select: none;
+    height: 15vh;
+    width:88vw;
+    background: black;
+    margin-top: -100vh;
+    margin-left: 10.5vw;
+    color: rgb(93, 247, 211);
+    font-size: 5vw;
+    text-align: center;
+    border-radius: 2rem;
+    border: 0.1rem solid white;
+    text-shadow: 0rem 0rem 0.7rem white;
+}
+h1{
+    display: block;
+}
+#toggleMode{
+    position: fixed;
+    top: 1vh;
+    right: 1vw;
+    background-color: #007bff;
+    color: white;
+    border-radius: 3rem;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 10px #00ffff;
+}
+#toggleMode:hover{
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+#info-box {
+    font-size: 1.7vw;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 50rem;
+    display: inline-block;
+    box-shadow: 0 0 10px #00ffff;
+    color: #f0f0f0;
+    margin-left: 11vw;
+    margin-top: 1vh;
+    user-select: none;
+}
+
+/* Giao diện điện thoại */
+@media screen and (max-width: 600px) {
+    .thanh-ben{
+        width: 20vw;
+        height: 100vh;
+        background-color: black;
+        display: block;
+        border: 0.1rem double white;
+        border-radius: 2rem;
+    }
+    .head{
+        padding-top: 1.5vh;
+    display: block;
+    user-select: none;
+    height: 6vh;
+    width:70vw;
+    background: black;
+    margin-top: -100vh;
+    margin-left: 24vw;
+    color: rgb(93, 247, 211);
+    font-size: 8vw;
+    text-align: center;
+    border-radius: 2rem;
+    border: 0.1rem solid white;
+    text-shadow: 0rem 0rem 0.7rem white;
+    }
+button {
+    /* padding: 10px 20px; */
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 87vh;
+    margin-right: 83vw;
+    }
+    a{
+        font-size: 8vw;
+        color: rgb(70, 92, 238);
+    }
+    a:hover{
+        color: rgb(70, 154, 238);
+        text-decoration: none;
+        font-size: 9vw;
+    }
+    .clock{
+        color: white;
+        user-select: none;
+        /* border: 0.1rem solid white; */
+        font-size: 5vw;
+        text-align: center;
+        border-radius: 50rem;
+        padding: 0.7rem;
+        margin-top: 1vh;
+        /* box-shadow: 0rem 0rem 1rem cyan; */
+    }
+    #info-box {
+        font-size: 5vw;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 1rem;
+        border-radius: 50rem;
+        display: inline-block;
+        box-shadow: 0 0 10px #00ffff;
+        color: #f0f0f0;
+        margin-left: 11vw;
+        margin-top: 1vh;
+        user-select: none;
+    }
+}
