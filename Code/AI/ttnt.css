@@ -1,8 +1,10 @@
 .fa-brain{
     color: red;
+    text-shadow: 0 0 2rem rgb(91, 15, 221);
 }
 .fa-house-user{
     color: rgb(70, 92, 238);
+    text-shadow: none;
 }
 .congcu{
     /* background-color: aqua; */

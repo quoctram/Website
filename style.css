@@ -101,6 +101,7 @@ a:hover{
 }
 .fa-house-user{
     color: red;
+    text-shadow: 0 0 2rem rgb(91, 15, 221);
 }
 .fa-solid{
     margin-top: 5.5vh;
