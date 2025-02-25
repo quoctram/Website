@@ -8,10 +8,10 @@
 }
 .congcu{
     /* background-color: aqua; */
-    width: 86vw;height: 100vh;
+    width: 86vw;
+    height: auto;
     margin-left: 12vw;
     margin-top: 2vh;
-
 }
 .AI{
     display: inline-block;

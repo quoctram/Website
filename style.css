@@ -69,7 +69,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 .thanh-ben{
     width: 10vw;
-    height: 100vh;
+    height: 110vh;
     background-color: black;
     display: block;
     border: 0.1rem double white;
@@ -113,7 +113,7 @@ a:hover{
     height: 15vh;
     width:88vw;
     background: black;
-    margin-top: -100vh;
+    margin-top: -110vh;
     margin-left: 10.5vw;
     color: rgb(93, 247, 211);
     font-size: 5vw;
