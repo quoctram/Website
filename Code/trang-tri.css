@@ -1,0 +1,133 @@
+.congcu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    /* Căn giữa theo chiều ngang, khoảng cách từ trên */
+    margin: 50px auto;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    box-sizing: border-box;
+    /* Đảm bảo không tràn màn hình */
+    min-width: 0;
+}
+
+.congcu .TD {
+    display: block;
+    padding: 25px 30px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.congcu .TD::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.congcu .TD:hover::before {
+    left: 100%;
+}
+
+.congcu .TD:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 1);
+    color: #667eea;
+}
+
+.congcu .TD:active {
+    transform: translateY(-4px) scale(0.98);
+    transition: all 0.1s ease;
+}
+
+/* Thêm icon cho mỗi tool */
+.congcu .TD:nth-child(1)::after {
+    content: '🤖';
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.congcu .TD:nth-child(2)::after {
+    content: '🖼️';
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.congcu .TD:nth-child(3)::after {
+    content: '🎬';
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.congcu .TD:nth-child(4)::after {
+    content: '🎵';
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.congcu .TD:nth-child(5)::after {
+    content: '📊';
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.congcu .TD:nth-child(6)::after {
+    content: '🎶';
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.congcu .TD:nth-child(7)::after {
+    content: '📈';
+    font-size: 24px;
+    margin-left: 10px;
+}
+/* Mặc định ẩn mobile giao diện */
+.congcu-mobile {
+    display: none;
+}
+
+/* Giao diện đơn giản cho điện thoại */
+@media (max-width: 768px) {
+    .congcu {
+        width: 74.5vw; /* Chiếm khoảng 85% chiều ngang màn hình */
+        max-width: none;
+        margin-left: auto; /* Đẩy ra bên phải */
+        margin-right: 10px; /* Cách mép phải một tí cho đẹp */
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .congcu .TD {
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+
+    .head {
+        text-align: center;
+    }
+
+    body {
+        overflow-x: hidden; /* Ngăn tràn ngang màn hình */
+    }
+}

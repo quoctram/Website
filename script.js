@@ -67,7 +67,7 @@ const facts = [
     "Hello :))",
     "Hi :))",
     "Có thể bạn chưa biết: 1 phút ở Mỹ bằng 60 giây ở Việt Nam",
-    "Nhế nhô nhác nhạn",
+    "Nếu gần đây bạn gặp nhiều chuyện vui, đừng vội mừng, hãy tiêu cực lên",
     "Chào mừng đến với website của mình",
 ];
 
